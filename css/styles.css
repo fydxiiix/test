@@ -1,0 +1,73 @@
+/* Псевдоклассы */
+span:first-child {
+  color: blue;
+}
+span:last-child {
+  color: red;
+}
+span:nth-child(2) {
+  color: rgb(255, 226, 59);
+}
+/* обращение к элементам */
+/* input:focus {
+  outline: rgb(32, 150, 32) 1px solid;
+  width: 100px;} */
+
+a:visited {
+  color: hotpink;
+}
+a:hover {
+  font-size: 24px;
+  color: rgb(173, 56, 173);
+  text-decoration: none;
+}
+a {
+  transition: all 1s;
+}
+/* Псевдоэлементы */
+/* p::first-line {
+  color: coral;
+  font-weight: 700;
+  font-style: italic;} */
+p::first-letter {
+  font-size: 40px;
+}
+input::placeholder {
+  color: rgb(69, 155, 69);
+  font-size: 20px;
+}
+h3::before {
+  content: "🦦";
+
+}
+h3::after {
+  content: " 🦦 ";
+}
+
+/* второму тегу стронг дать зеленый цвет
+первому стронг желтый
+После тега Б поставить эмоджи */
+
+strong:first-child {
+color: rgb(247, 214, 70);
+} 
+strong:nth-child(2) {
+  color: rgb(90, 204, 90);
+}
+
+b::after {
+  content:"🐥";
+}
+/* комбинация селекторов  */
+.block p strong {}
+
+/* приоритетность селекторов */
+*
+h1, p, span
+.className
+#id
+!important
+
+/* ! что-то важное */
+/* todo доделать  */
+/* ? */
